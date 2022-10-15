@@ -113,17 +113,6 @@ fun CryptoDetailScreen(
                         }
 
                     }
-                    /* TODO-FIXME
-                    items(crypto.team) { teamMember ->
-                        MoreInfoListItem(
-                            moreInfoItemMember = teamMember,
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(10.dp)
-                        )
-                       Divider()
-                    }
-                    */
                 }
 
             }
