@@ -27,13 +27,18 @@ fun BottomNavGraph(
             TabTwoScreen()
         }
 
+        composable(route = BottomBarScreen.TabThreeScreen.route) {
+            TabThreeScreen()
+        }
+
+        composable(route = BottomBarScreen.TabFourScreen.route) {
+            TabFourScreen()
+        }
+
         composable(route = BottomBarScreen.CryptoListScreen.route) {
             CryptoListScreen(navController)
         }
 
-        composable(route = BottomBarScreen.TabThreeScreen.route) {
-            TabThreeScreen()
-        }
 
 
 

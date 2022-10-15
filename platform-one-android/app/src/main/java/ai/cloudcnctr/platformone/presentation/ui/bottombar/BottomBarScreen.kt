@@ -38,22 +38,28 @@ sealed class BottomBarScreen(
 
     )
 
-    object CryptoListScreen: BottomBarScreen(
-        route = "four",
-        title = "Explore",
-        iconId = R.drawable.ic_bubble
-    )
-
     object TabThreeScreen: BottomBarScreen(
         route = "three",
         title = "Settings",
         iconId = R.drawable.ic_bubble
     )
 
+    object TabFourScreen: BottomBarScreen(
+        route = "four",
+        title = "Weather",
+        iconId = R.drawable.ic_bubble
+    )
+
+    object CryptoListScreen: BottomBarScreen(
+        route = "five",
+        title = "Explore",
+        iconId = R.drawable.ic_bubble
+    )
+
 
     object CryptoDetailScreen: BottomBarScreen(
-        route = "five",
-        title = "Five",
+        route = "six",
+        title = "CryptoDetails",
         iconId = R.drawable.ic_bubble
     )
 }
