@@ -19,12 +19,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import ai.cloudcnctr.cloudcnctr.presentation.ui.crypto_list.components.CryptoListViewModel
 import ai.cloudcnctr.cloudcnctr.presentation.ui.crypto_list.components.CryptoListItem
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.DeepBlue
-
+import androidx.hilt.navigation.compose.hiltViewModel
 /**
  * Created by Das on 2022-07-11.
  */

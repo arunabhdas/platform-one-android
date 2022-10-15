@@ -17,7 +17,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import ai.cloudcnctr.cloudcnctr.common.Constants
 import ai.cloudcnctr.cloudcnctr.presentation.ui.crypto_detail.components.CryptoTag
@@ -28,6 +27,7 @@ import ai.cloudcnctr.cloudcnctr.presentation.ui.crypto_list.components.CryptoLis
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.DeepBlue
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.LightGreen1
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.LightRed
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.accompanist.flowlayout.FlowRow
 
 /**
@@ -36,8 +36,8 @@ import com.google.accompanist.flowlayout.FlowRow
 @Composable
 fun CryptoDetailScreen(
     name: String?,
-    viewModel: CryptoDetailViewModel = hiltViewModel()
 ) {
+    val viewModel: CryptoDetailViewModel = viewModel()
     val state = viewModel.state.value
     Box(
         modifier = Modifier
@@ -152,6 +152,6 @@ fun CryptoDetailScreen(
 @Preview
 fun CryptoDetailScreenPreview() {
     CryptoDetailScreen(
-        name = "detail_screen", viewModel = hiltViewModel()
+        name = "detail_screen"
     )
 }
