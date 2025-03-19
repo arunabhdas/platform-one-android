@@ -103,7 +103,7 @@ fun GreetingSection(
                 style = MaterialTheme.typography.h2
             )
             Text(
-                text = "CloudCnctr.AI platform for design, development, deployment and distribution of cloud first mobile first application stacks",
+                text = "No-code platform for design, development and deployment of cloud-first mobile-first tech stacks",
                 style = MaterialTheme.typography.body1
             )
         }
